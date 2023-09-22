@@ -1,0 +1,3 @@
+binary==1.0.0
+datadog-checks-base==33.1.0
+parsys-requests-unixsocket==0.3.1
