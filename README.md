@@ -12,7 +12,7 @@ This script provides a custom check for Datadog to monitor the status of uWSGI w
 ## Installation
 
 1. Place the `uwsgi_status.py` script in the `/etc/datadog/checks.d/` directory of your Datadog Agent installation.
-2. Place the `uwsgi_status.yaml` configuration file in the `/etc/datadog/conf.d/uwsgi.d/` directory of your Datadog Agent installation.
+2. Place the `uwsgi_status.yaml` configuration file in the `/etc/datadog/conf.d/uwsgi_status.d/` directory of your Datadog Agent installation.
 3. Restart the Datadog Agent.
 
 ## Configuration
