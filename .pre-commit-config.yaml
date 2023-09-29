@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-docstring-first
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-yaml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: name-tests-test
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+      - id: no-commit-to-branch
+        args: [--branch, master, --branch, main]
+  - repo: https://github.com/asottile/reorder-python-imports
+    rev: v3.11.0
+    hooks:
+      - id: reorder-python-imports
+        args: [--py310-plus, --add-import, 'from __future__ import annotations']
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.13.0
+    hooks:
+      - id: pyupgrade
+        args: [--py310-plus]
+  - repo: https://github.com/psf/black
+    rev: 23.9.1
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.5.1
+    hooks:
+      - id: mypy
